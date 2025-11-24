@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adorts Adurah - Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon"
+    href="https://media.licdn.com/dms/image/v2/D4D03AQHq0mEHzP83tw/profile-displayphoto-scale_200_200/B4DZofq.PmKUAc-/0/1761467950780?e=1764201600&v=beta&t=VVGIrTHNQInzxnWXCZzWThjVfQKsJosA-Z8T1njnmuQ"
+    type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img style="border-radius: 30px; padding: 10px"
+            src="https://media.licdn.com/dms/image/v2/D4D03AQHq0mEHzP83tw/profile-displayphoto-scale_200_200/B4DZofq.PmKUAc-/0/1761467950780?e=1764201600&v=beta&t=VVGIrTHNQInzxnWXCZzWThjVfQKsJosA-Z8T1njnmuQ"
+            alt="Adorts Adurah" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Adurah">Adorts Adurah</h1>
+
+          <p class="title">Software engineer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:inbox.adorts@outlook.com" class="contact-link">inbox.adorts@outlook.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone / WhatsApp</p>
+
+              <a href="tel:+2349051547147" class="contact-link">+234 9051547147</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="1982-06-23">Feb 28, 2001</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Aguda Surulere, Lagos, Ng</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I'm Adorts Adurah, the Creative Director and Founder of <strong>Adorts Technology</strong>, a
+            forward-thinking
+            software and digital solutions company based in Nigeria.
+            I lead a diverse team of developers, engineers, and creatives who work together to design and build
+            impactful technology products that solve real-world challenges.
+          </p>
+
+          <p>
+            At Adorts Technology, we specialize in creating intelligent and scalable systems — from business automation
+            tools to blockchain solutions and modern web applications.
+            I’m deeply involved in research and development, constantly exploring emerging technologies and new ideas
+            that can transform how people and businesses interact with digital products.
+          </p>
+
+          <p>
+            My approach combines strategy, innovation, and practical execution. I believe that great technology is built
+            on deep understanding — that’s why every project begins with thorough research, analysis, and creative
+            brainstorming to ensure we deliver results that stand out.
+            Our mission is to turn bold ideas into reliable solutions that inspire growth and lasting impact.
+          </p>
+
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What i'm doing</h3>
+
+          <ul class="service-list">
+
+
+
+            <li class="service-item">
+
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Software Engineering</h4>
+                <p class="service-item-text">
+                  I build reliable and scalable software from the ground up — from backend systems to full-stack
+                  applications that just work.
+                </p>
+              </div>
+            </li>
+
+            <li class="service-item">
+
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">System Design & Architecture</h4>
+                <p class="service-item-text">
+                  Creating smart, secure, and efficient system structures that keep platforms stable, scalable, and easy
+                  to integrate with other technologies.
+                </p>
+              </div>
+            </li>
+
+            <li class="service-item">
+
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">AI & Software Model Design</h4>
+                <p class="service-item-text">
+                  Integrate Ai and design software model for startup with no technical skill
+                </p>
+              </div>
+            </li>
+
+            <li class="service-item">
+
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">CyberWare development</h4>
+                <p class="service-item-text">
+                  I build cybersecurity software for comapny to secure and protect there company from attack and scam.
+                </p>
+              </div>
+            </li>
+
+            <li class="service-item">
+
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Research & Innovation</h4>
+                <p class="service-item-text">
+                  Exploring new tech and creative ideas to deliver innovative solutions that solve real-world problems
+                  today and prepare for tomorrow.
+                </p>
+              </div>
+            </li>
+
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials
+        -->
+
+        <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">Testimonials</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-4.png" alt="Mr. Alabama" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Mr. Alabama</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    I worked with Adurah as a Software Engineer for CybershieldTech. He developed our cyber security
+                    software
+                    and AI systems that significantly improved our company's protection. His expertise is top-notch and
+                    reliable.
+                  </p>
+                </div>
+
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-1.png" alt="Founder of Gilfordview" width="60"
+                    data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Founder, Chinedu Emmanuel Gilfordview CEO
+                </h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Adurah built our hotel management and payment system from scratch. The system is smooth,
+                    user-friendly,
+                    and has improved our operations tremendously. We couldn’t have asked for better work.
+                  </p>
+                </div>
+
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-4.png" alt="Obaelaifa founder" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Dr Bamikole Seyi Fasanmi Founder,
+                  Obaelaifa Tradomedical</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Adurah built our website to teach, sell, and consult on traditional medicine. The platform is
+                    intuitive,
+                    and it has helped us reach more people and manage our services effectively.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-1.png" alt="Christ Eagle of Mercy" width="60"
+                    data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Christ, Eagle of Mercy</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Adurah built a live service management website for us, enabling us to continue our services without
+                    interruption.
+                    His work has been crucial in keeping our operations running smoothly.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-4.png" alt="Mr. Yusuf, Topkonnect.net" width="60"
+                    data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Mr. Yusuf, Co-founder Topkonnect.net</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Adurah developed our platform to help football talents move across countries and manage their
+                    careers.
+                    His technical expertise and understanding of our needs were exceptional.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+
+
+        </section>
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+              <time datetime="2021-06-14">14 June, 2021</time>
+
+              <div data-modal-text>
+                <p>
+                  Adurah was hired to create a corporate identity. We were very pleased with the work done. She has a
+                  lot of experience
+                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                  consectetur adipiscing
+                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+
+        <!--
+          - clients
+        -->
+
+        <section class="clients">
+
+          <h3 class="h3 clients-title">Clients</h3>
+
+          <ul class="clients-list has-scrollbar">
+
+            <li class="clients-item">
+              <h4 style="color: white;">Cybershield Tech Security</h4>
+            </li>
+
+            <li class="clients-item">
+              <h4 style="color: white;">Gilfordview Hotel</h4>
+            </li>
+
+            <li class="clients-item">
+              <h4 style="color: white;">Obaelaifa Tradomedical</h4>
+            </li>
+
+            <li class="clients-item">
+              <h4 style="color: white;">Christ Eagle of Mercy Church</h4>
+            </li>
+
+            <li class="clients-item">
+              <h4 style="color: white;">Topkonnect.net Football Club</h4>
+            </li>
+            <li class="clients-item">
+              <h4 style="color: white;">The Deonafrik Group Real Estate</h4>
+            </li>
+
+
+          </ul>
+
+        </section>
+
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <!-- EDUCATION -->
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">ICA Secondary School, Ibadan</h4>
+              <span>2017</span>
+              <p class="timeline-text">
+                My coding journey began in 2017 when <strong>Grow with Google</strong> visited my school.
+                That event introduced me to web technologies and inspired me to start building small projects
+                for local schools, salons, and churches.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Udemy Online Learning</h4>
+              <span>2022 — Present</span>
+              <p class="timeline-text">
+                Advanced my skills through <strong>Udemy</strong> courses in <strong>Software Engineering, System
+                  Design,
+                  and Cybersecurity</strong>. This helped me transition from small freelance work into leading
+                professional software projects and building a tech startup team.
+              </p>
+            </li>
+
+          </ol>
+
+        </section>
+
+        <!-- EXPERIENCE -->
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="briefcase-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Founder & Lead Engineer — Adorts Technology</h4>
+              <span>2023 — Present</span>
+              <p class="timeline-text">
+                Established <strong>Adorts Technology</strong> as a platform to bring together skilled developers,
+                designers,
+                and system engineers to turn ideas into real digital products. I oversee software architecture,
+                AI integrations, and research-based innovation for startups and enterprise systems.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Software Engineer — CyberShield (CybershieldTech)</h4>
+              <span>2024 — Present</span>
+              <p class="timeline-text">
+                Currently serving as a software engineer for <strong>CyberShield</strong>,
+                where I design and implement AI-driven cybersecurity systems that protect company infrastructures
+                from digital threats. My role involves developing automation layers and improving overall
+                data protection across their core software.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">System Developer — Gilfordview Hotel</h4>
+              <span>2023 — 2024</span>
+              <p class="timeline-text">
+                Developed a complete hotel management and payment platform for <strong>Gilfordview Hotel</strong>.
+                The system automates room bookings, billing, and guest tracking — helping staff manage operations
+                efficiently through a custom-built interface.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Web Developer — Obaelaifa Tradomedical</h4>
+              <span>2023</span>
+              <p class="timeline-text">
+                Created a dynamic website for <strong>Obaelaifa Tradomedical</strong> to teach, sell,
+                and consult on traditional medicine and spiritual products.
+                Integrated online learning tools and e-commerce systems to connect them with a wider audience.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Web Developer — Christ Eagle of Mercy</h4>
+              <span>2023</span>
+              <p class="timeline-text">
+                Designed and managed a live service broadcasting platform for <strong>Christ Eagle of Mercy</strong>,
+                enabling their ministry to reach members globally before they discontinued the online service.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Backend Developer — Topkonnect.net</h4>
+              <span>2023</span>
+              <p class="timeline-text">
+                Worked with <strong>Topkonnect.net</strong>, a football talent and migration startup based in Egypt.
+                I contributed to backend systems that help connect young footballers with international career
+                opportunities
+                and streamline their registration and scouting process.
+              </p>
+            </li>
+
+          </ol>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web design</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Applications</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web development</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web design</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Applications</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web development</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Finance</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Orizon</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Fundo</h3>
+
+                <p class="project-category">Web design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Brawlhalla</h3>
+
+                <p class="project-category">Applications</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
+                </figure>
+
+                <h3 class="project-title">DSM.</h3>
+
+                <p class="project-category">Web design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">MetaSpark</h3>
+
+                <p class="project-category">Web design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Summary</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Task Manager</h3>
+
+                <p class="project-category">Applications</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Arrival</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <!-- Lagos Address -->
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe src="https://www.google.com/maps?q=112%20Adetola%20Aguda%20Lagos&output=embed" width="400"
+              height="300" loading="lazy">
+            </iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form id="telegramForm" class="form" data-form>
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required>
+              <input type="email" name="email" class="form-input" placeholder="Email address" required>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required></textarea>
+
+            <button class="form-btn" type="submit">
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+            <!-- Success message -->
+            <p id="formStatus" style="margin-top:10px; font-weight:600;"></p>
+          </form>
+        </section>
+
+      </article>
+
+    
+
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+  <script src="./tele.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
