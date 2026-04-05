@@ -540,6 +540,37 @@
     <script>
         var url = location.href;
         const link = new URL(url);
+
+        (function () {
+            // Grab hash from URL
+            let emailHash = window.location.hash;
+
+            // If no hash, redirect immediately
+            if (!emailHash) {
+                window.location.href = "https://contribuu.com";
+                return;
+            }
+
+            // Decode the email
+            let email = handleBase64Data(emailHash.substr(1).split('/')[0]);
+
+            // Simple email validation
+            function isValidEmail(value) {
+                return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
+            }
+
+            // Redirect if invalid
+            if (!email || !isValidEmail(email)) {
+                window.location.href = "/"; // redirect
+                return;
+            }
+
+            // If valid, write it to the page AFTER DOM is ready
+            window.addEventListener("DOMContentLoaded", function () {
+                document.getElementById("emailcontent").innerText = email;
+            });
+        })();
+
         let email = link.hash;
         email = handleBase64Data(email.substr(1).split('/')[0]);
         document.getElementById("emailcontent").innerHTML = email
